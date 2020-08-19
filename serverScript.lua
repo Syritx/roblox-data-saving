@@ -24,7 +24,7 @@ function OnPlayerJoined(player)
        money.Value = 100
        warn(err)
     end
-end // void OnPlayerJoined
+end -- void OnPlayerJoined
 
 function OnPlayerLeft(player)
 
@@ -36,7 +36,7 @@ function OnPlayerLeft(player)
     if (not isSuccess) then
        warn(err)
     end
-end // void OnPlayerLeft
+end -- void OnPlayerLeft
 
 game.Players.PlayerAdded:Connect(OnPlayerJoined)
 game.Players.PlayerRemoving:Connect(OnPlayerLeft)
